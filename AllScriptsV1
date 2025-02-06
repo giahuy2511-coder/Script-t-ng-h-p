@@ -69,7 +69,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/r
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()(Settings)
   end
-  })   AddButton(Tab1o, {
+})   AddButton(Tab1o, {
      Name = "Quantum Hub",
     Callback = function()
 	  local Settings = {
@@ -79,7 +79,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()(Settings)
   end
-  })   AddButton(Tab1o, {
+})   AddButton(Tab1o, {
      Name = "Rubu Hub",
     Callback = function()
 	  local Settings = {
@@ -89,4 +89,4 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTON
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Bubu2k/Rubutv/refs/heads/main/rubuhubv2"))()(Settings)
   end
-  })
+})
