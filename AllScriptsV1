@@ -89,4 +89,14 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTON
 
 loadstring(game:HttpGet("https://gist.githubusercontent.com/angry5/ec20347a74aa4e46c71b15b6093eeaf5/raw/Angery.lua"))()(Settings)
   end
+})   AddButton(Tab1o, {
+     Name = "Dersi X Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-DersiX/Dersi-X-Hub/refs/heads/main/Main.lua"))()(Settings)
+  end
 })
