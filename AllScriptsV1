@@ -38,8 +38,7 @@ loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V
      local Tab4o = MakeTab({Name = "Script Fish"})
      local Tab5o = MakeTab({Name = "Script Balde Ball"})
      local Tab6o = MakeTab({Name = "Script MM2"})
-     local Tab7o = MakeTab({Name = "Script Doors"})
-     local Tab8o = MakeTab({Name = "Script Rivals"})
+     local Tab7o = MakeTab({Name = "Script Rivals"})
      local Tab8o = MakeTab({Name = "Script All Map"})
     
 ------- BUTTON
@@ -299,6 +298,33 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5235527a112c17
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5235527a112c17a20fa8aaff00ccc486.lua"))()(Settings)
   end
 })   AddButton(Tab5o, {
+     Name = "Ronix Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()(Settings)
+  end
+})   AddButton(Tab6o, {
+     Name = "X Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()(Settings)
+  end
+})   AddButton(Tab6o, {
+     Name = "Vertex Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()(Settings)
+  end
+})   AddButton(Tab7o, {
      Name = "Ronix Hub",
     Callback = function()
 	  local Settings = {
