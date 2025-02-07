@@ -271,4 +271,31 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Phatdepzaicrystal/Aut
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/pisovn/OisiRoblox1/refs/heads/main/AutoBountyXero"))()(Settings)
   end
-})
+})   AddButton(Tab4o, {
+     Name = "Speed Hub X",
+    Callback = function()
+	  local Settings = {
+ 
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()(Settings)
+  end
+})   AddButton(Tab4o, {
+     Name = "Ronix Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5235527a112c17a20fa8aaff00ccc486.lua"))()(Settings)
+  end
+})   AddButton(Tab4o, {
+     Name = "Raito Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5235527a112c17a20fa8aaff00ccc486.lua"))()(Settings)
+  end
+
