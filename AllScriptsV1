@@ -103,5 +103,5 @@ AddButton(Tab6o, {Name="Vertex Hub",Callback=function()
 end});
 AddButton(Tab7o, {Name="Ronix Hub",Callback=function()
 	local Settings = {};
-	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()(Settings);
+	loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/47fc2ea07fef3d78fb68ca87ab2b7503.lua"))()(Settings)
 end});
