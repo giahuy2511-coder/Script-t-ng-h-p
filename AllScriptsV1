@@ -15,9 +15,6 @@ Window.Position = UDim2.new(0.3, 0, 0.2, 0)
 local Tabs = {
     Main = Window:AddTab({ Title = "Script Fram", Icon = "rbxassetid://4483345998" })
 }
-    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://4483345998" })
-}
-
 
 Tabs.Main:AddSection("name")
 local hakiRunning = false
