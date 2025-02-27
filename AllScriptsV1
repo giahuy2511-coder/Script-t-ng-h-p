@@ -7,7 +7,10 @@ local Window = Fluent:CreateWindow({
     Acrylic = true,
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
-})
+      }
+    }
+  })
+
        MinimizeButton({
        Image = "http://www.roblox.com/asset/?id=108012550637442",
        Size = {40, 40},
@@ -17,74 +20,386 @@ local Window = Fluent:CreateWindow({
        StrokeColor = Color3.fromRGB(255, 0, 0)
       })
       
-Window.Draggable = false
-Window.Position = UDim2.new(0.3, 0, 0.2, 0)
-
-local Tabs = {
-    Main = Window:AddTab({ Title = "Main", Icon = "rbxassetid://4483345998" })
+------ Tab
+     local Tab1o = MakeTab({Name = "Script Farm(BF)"})
+     local Tab2o = MakeTab({Name = "Script Kaitun(BF)"})
+     local Tab3o = MakeTab({Name = "Auto Fruits(BF)"})
+     local Tab4o = MakeTab({Name = "Script Fish"})
+     local Tab5o = MakeTab({Name = "Script Balde Ball"})
+     local Tab6o = MakeTab({Name = "Script MM2"})
+     local Tab7o = MakeTab({Name = "Script Rivals"})
+     local Tab8o = MakeTab({Name = "Script All Map"})
+    
+------- BUTTON
+    
+    AddButton(Tab1o, {
+     Name = "W azure",
+    Callback = function()
+	getgenv().Team = "Pirates"
+getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+  end
+     })   AddButton(Tab1o, {
+     Name = "Redz Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
 }
 
-Tabs.Main:AddSection("name")
-local hakiRunning = false
-
-local VirtualInputManager = game:GetService("VirtualInputManager")
-
-Tabs.Main:AddToggle({
-    Title = "name tab",
-    Description = "name",
-    Default = false,
-    Callback = function(value)
-        hakiRunning = value
-        if hakiRunning then
-            spawn(function()
-                while hakiRunning do
-                    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.J, false, game)
-                    wait(0.1)
-                    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.J, false, game)
-                    wait(5)
-                end
-            end)
-            Fluent:Notify({
-                Title = "name",
-                Content = "i dont know",
-                Duration = 3
-            })
-        else
-            Fluent:Notify({
-                Title = "name",
-                Content = "i dont know",
-                Duration = 3
-            })
-        end
-    end
-}):SetIcon("rbxassetid://4483345998")
-
-Tabs.Main:AddSection("Menu Control")
-
-local menuVisible = true
-
-Tabs.Main:AddButton({
-    Title = "Ẩn/Hiện Menu",
-    Description = "Ẩn hoặc hiện menu",
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Speed Hub X",
     Callback = function()
-        if menuVisible then
-            Window:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Quad", 0.3, true)
-            menuVisible = false
-            Fluent:Notify({
-                Title = "name",
-                Content = "i dont know",
-                Duration = 3
-            })
-        else
-            Window:TweenSize(UDim2.new(0, 580, 0, 460), "Out", "Quad", 0.3, true)
-            menuVisible = true
-            Fluent:Notify({
-                Title = "????",
-                Content = "???",
-                Duration = 3
-            })
-        end
-    end
-})
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
 
-Window:SelectTab(1)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Quantum Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Trustmenotcondom/QTONYX/refs/heads/main/QuantumOnyx.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Angery Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://gist.githubusercontent.com/angry5/ec20347a74aa4e46c71b15b6093eeaf5/raw/Angery.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Dersi X Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Dev-DersiX/Dersi-X-Hub/refs/heads/main/Main.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Ronix Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Rise Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/FreeScripts.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Hune IPA Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DTrung276/Hune-Hub/refs/heads/main/HuneHub"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Trẩu Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/TrauHub/refs/heads/main/TrauXt"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Xero Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+getgenv().Team = "Pirates"
+getgenv().Hide_Menu = false
+getgenv().Auto_Execute = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Xero2409/XeroHub/refs/heads/main/main.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "AnDepZai Hub",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AnDepZaiHub/AnDepZaiHubBeta/refs/heads/main/AnDepZaiHubNewUpdated.lua"))()(Settings)
+  end
+})   AddButton(Tab1o, {
+     Name = "Zis Roblox",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaCrack/Zis/refs/heads/main/ZisRb9"))()(Settings)
+  end
+})   AddButton(Tab2o, {
+     Name = "Simple Kaitun",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+getgenv().simple_settings = {
+
+["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
+
+["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
+
+["METHOD"] = "Half", -- Method for gaining mastery, "Half"[300] or "Full"[600]
+
+},
+
+
+
+["OBJECTIVE"] = { -- Goals for farming and unlocking features
+
+["GODHUMAN"] = true, -- Automatically unlock the "Godhuman" fighting style
+
+["RACE-V3"] = true, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
+
+["FRAGMENT"] = 100000, -- Limit number of fragments to collect
+
+
+
+-- SWORD
+
+["CANVANDER"] = true,
+
+["BUDDY-SWORD"] = true,
+
+["CURSED-DUAL-KATANA"] = true,
+
+["SHARK-ANCHOR"] = true, -- soon..
+
+
+
+--GUN
+
+["ACIDUM-RIFLE"] = true,
+
+["VENOM-BOW"] = true,
+
+["SOUL-GUITAR"] = true,
+
+},
+
+
+
+["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
+
+["PRIORITYFRUIT"] = { -- List of preferred fruits to purchase or eat in order of priority
+
+[1] = "Dragon-Dragon",
+
+[2] = "Flame-Flame",
+
+[3] = "Rumble-Rumble",
+
+[4] = "Human-Human: Buddha",
+
+[5] = "Dark-Dark",
+
+},
+
+
+
+["FPSCAP"] = 30, -- Limit the frame rate to optimize performance
+
+["LOWTEXTURE"] = true -- Reduce graphic quality for better performance
+
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs/contents/refs/heads/main/bloxfruit-kaitan-main.lua"))()(Settings)
+  end
+})   AddButton(Tab2o, {
+     Name = "Rise Hub Kaitun",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+_G.Config = {
+["Melee"] = {
+["Superhuman"] = true,
+["Death Step"] = true,
+["Sharkman Karate"] = true,
+["Electric Claw"] = true,
+["Dragon Talon"] = true,
+["Godhuman"] = true
+},
+["Sword"] = {
+["Saber"] = true,
+["Rengoku"] = true,
+["Canvander"] = true,
+["Buddy Sword"] = true,
+["Yama"] = true,
+["Tushita"] = true,
+["True Triple Katana"] = true,
+["Cursed Dual Katana"] = true
+},
+["Gun"] = {
+["Kabucha"] = true,
+["Acidum Rifle"] = true,
+["Serpent Bow"] = true
+},
+["Mastery"] = {
+["Sword"] = true
+},
+["Setting"] = {
+["Enabled"] = true,
+["Bring Mob [Less Lag]"] = true,
+["Hop Server"] = true,
+["Reduce Lag"] = true,
+["Notifycation Remove"] = true,
+["Hop When Player Nearby"] = {
+["Enabled"] = true,
+["Radius"] = 350
+}
+}
+}
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrashLua/BloxFruits/main/KaitunBeta.RiseEvo"))()(Settings)
+  end
+})   AddButton(Tab3o, {
+     Name = "Tboy Auto Fruits",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Pirates"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TBoyRoblox727/TBoyRobloxYTB/refs/heads/main/Farmfruit.lua"))()(Settings)
+  end
+})   AddButton(Tab3o, {
+     Name = "Lion Hub Auto Fruits",
+    Callback = function()
+	  local Settings = {
+  JoinTeam = "Marines"; -- Pirates/Marines
+  Translator = true; -- true/false
+}
+
+_G.Select_Marines = true
+TweenFruit = true
+StoreFruit = true
+RandomFruit = true
+_G.AutoESPFruit = true
+BypassTP = true
+Rejoin_Boost = true
+Set_Level_For_Farm = 1
+_G.FarmLevel = true
+Set_Beli_For_Kata = 1
+_G.FarmKata = true
+Set_Bones_For_Bones = 1
+_G.AuBones = true
+_G.MysticIsland = true
+_G.AttackRip_indraiffind = true
+_G.Katav2 = true
+_G.BuyZoroSw = true
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NHMdz/BloxFruit/main/Lion%20Hub%20Find%20Fruit.lua"))()(Settings)
+  end
+})   AddButton(Tab4o, {
+     Name = "Speed Hub X",
+    Callback = function()
+	  local Settings = {
+ 
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()(Settings)
+  end
+})   AddButton(Tab4o, {
+     Name = "Ronix Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5235527a112c17a20fa8aaff00ccc486.lua"))()(Settings)
+  end
+})   AddButton(Tab4o, {
+     Name = "Raito Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/5235527a112c17a20fa8aaff00ccc486.lua"))()(Settings)
+  end
+})   AddButton(Tab5o, {
+     Name = "Ronix Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()(Settings)
+  end
+})   AddButton(Tab6o, {
+     Name = "X Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()(Settings)
+  end
+})   AddButton(Tab6o, {
+     Name = "Vertex Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/vertex-peak/vertex/refs/heads/main/loadstring'))()(Settings)
+  end
+})   AddButton(Tab7o, {
+     Name = "Ronix Hub",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/79ab2d3174641622d317f9e234797acb.lua"))()(Settings)
+  end
+})   AddButton(Tab8o, {
+     Name = "Infinite Yield",
+    Callback = function()
+	  local Settings = {
+  
+}
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()(Settings)
+  end
+})
