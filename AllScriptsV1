@@ -8,7 +8,15 @@ local Window = Fluent:CreateWindow({
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
-
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=108012550637442",
+       Size = {40, 40},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
 Window.Draggable = false
 Window.Position = UDim2.new(0.3, 0, 0.2, 0)
 
